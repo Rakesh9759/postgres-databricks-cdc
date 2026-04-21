@@ -6,7 +6,6 @@ simulator wrapper.
 This script acts as a wrapper to call the main.py simulate script from the
 external project 'day-1_sales_data_generator'.
 
-External Project: https://github.com/victor-antoniassi/day-1_sales_data_generator
 Note: You must have the external project cloned locally at the path defined in
 CHINOOK_DB_PROJECT_PATH for this script to work.
 

@@ -1,6 +1,6 @@
 # Postgres to Databricks CDC Pipeline
 
-![CI Status](https://github.com/victor-antoniassi/postgres-to-databricks-cdc/actions/workflows/deploy.yml/badge.svg)
+![CI Status](https://github.com/rakesh/postgres-to-databricks-cdc/actions/workflows/deploy.yml/badge.svg)
 ![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)
 ![Code Style](https://img.shields.io/badge/code%20style-ruff-000000.svg)
 ![Type Checker](https://img.shields.io/badge/type%20checker-mypy-blue)
@@ -32,7 +32,7 @@ This project focuses strictly on the **Extract & Load (EL)** phases of modern da
 *   **Near Real-Time Replication**: Streams `INSERT`, `UPDATE`, and `DELETE` operations continuously using PostgreSQL logical replication (`pgoutput`) with low latency.
 *   **Dual-Mode Operation**:
     *   **Full Load Mode**: High-performance initial load of historical data.
-    *   **CDC Mode**: Incremental updates with exactly-once processing semantics.
+    *   **CDC Mode**: Incremental updates with exactly-once processing semantics.fvictor
 *   **Databricks Native**:
     *   Leverages Unity Catalog Volumes for efficient staging.
     *   Writes directly to Delta Tables with schema evolution.
@@ -171,7 +171,7 @@ uv run python -m src.postgres_cdc.pipeline_main --mode full_load --catalog dev_c
 ### 4. Simulate Transactions (Optional)
 Generate some fake sales data in your Postgres database to test CDC.
 
-> **Requirement:** This script wraps an external generator. You must clone [day-1_sales_data_generator](https://github.com/victor-antoniassi/day-1_sales_data_generator) locally for it to work.
+> **Requirement:** This script wraps an external generator. You must clone [day-1_sales_data_generator](https://github.com/rakesh/day-1_sales_data_generator) locally for it to work.
 
 ```bash
 # Generate 5 inserts, 2 updates, 1 delete

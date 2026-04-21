@@ -55,5 +55,5 @@ targets:
       schema: bronze
     # Example permissions for the production environment.
     permissions:
-      - user_name: victor@antoniassi.xyz
+      - user_name: mandavarakesh28@gmail.com
         level: CAN_MANAGE
